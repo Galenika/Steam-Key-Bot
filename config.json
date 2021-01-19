@@ -1,0 +1,4 @@
+{
+    "BOT_TOKEN": "Your Bot Token",
+    "DISCORD_CHANNEL": "Discord Text Channel you are wanting to monitor"
+}
