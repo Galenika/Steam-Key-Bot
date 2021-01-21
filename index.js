@@ -96,7 +96,7 @@ client.on('message', msg => {
         msg.reply('Sorry, couldn\'t find that game.  Check the name using !list');
       }
     }
-    else if(msg.content.match(steamkeyRegex) != null && msg.content.match(originRegex) != null) {
+    else if(msg.content.match(steamkeyRegex) != null || msg.content.match(originRegex) != null) {
       msg.delete();
       msg.reply('You posted a Game Key! To make it easier to keep track on what keys have been used, please post doing the following: \n\r `!addkey Name of Game Key` \n\r Example: `!addKey Shadow of Mordor 14414-AADB-5534` \n\r You can view all the games in our key inventory by typing `!list`.  If you see a game you want, just type `!claim Name of Game`.  Please try to use the Steam Store Page names of games you add to lower the amount of Duplicate Names.\n\r Thanks!');
     }
